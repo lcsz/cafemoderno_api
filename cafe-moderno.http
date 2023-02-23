@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/coffee HTTP/1.1
+
+
+POST http://localhost:3000/api/coffee HTTP/1.1
+Content-Type: application/json
+
+{
+"name": "Orfeu Intenso",
+"description": "Delicioso cafe de torra intensa, super encorpado",
+"producer": "Orfeu",
+"points": 81.0
+}
+
+
+GET http://localhost:3000/api/coffee/3 HTTP/1.1
+
+
+PUT http://localhost:3000/api/coffee/3 HTTP/1.1
+Content-Type: application/json
+
+{
+"points": 81.0,
+"name": "Orfeu Intenso",
+}
+
+
+
+DELETE http://localhost:3000/api/coffee/3 HTTP/1.1
+
+
+
+GET http://localhost:3000/api/coffee/23/comments HTTP/1.1
+
